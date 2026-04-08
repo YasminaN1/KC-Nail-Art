@@ -23,8 +23,14 @@
         io.unobserve(e.target);
       }
     });
-  }, { threshold: 0.12 });
-  reveals.forEach(r => io.observe(r));
+  }, { threshold: 0.05 });
+  reveals.forEach(r => {
+    io.observe(r);
+    // Trigger immediately if already in viewport
+    if(r.getBoundingClientRect().top < window.innerHeight) {
+      r.classList.add('visible');
+    }
+  });
  
   // Stagger service cards
   document.querySelectorAll('.service-card.reveal').forEach((card, i) => {
