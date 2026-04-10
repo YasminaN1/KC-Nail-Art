@@ -116,9 +116,10 @@
     .hero-bg {
       position: absolute;
       inset: 0;
-      background: 
-        radial-gradient(ellipse 60% 50% at 70% 40%, rgba(232,207,196,0.55) 0%, transparent 70%),
-        radial-gradient(ellipse 40% 60% at 20% 80%, rgba(212,184,172,0.3) 0%, transparent 60%);
+      background-image: url('imgs/blackgold.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
       z-index: 0;
     }
     /* subtle animated shimmer rings */
