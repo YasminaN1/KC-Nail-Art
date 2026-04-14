@@ -4,232 +4,298 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>KC Nail Art — Welcome</title>
-  <link href="https://fonts.googleapis.com/css?family=Bentham|Playfair+Display|Raleway:400,500|Suranna|Trocchi" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@200;300;400;500&family=Raleway:wght@400;500&family=Bentham&family=Playfair+Display&family=Suranna&family=Trocchi&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
- 
+
   <!-- NAVBAR -->
- <nav>
-  <div class="nav-logo">
-    <img src="imgs/logo.jpg" alt="KC Nail Art"
-      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
-    <div style="display:none; width:58px; height:58px; background:var(--charcoal); border-radius:4px; align-items:center; justify-content:center;">
-      <span style="font-family:'Pinyon Script',cursive; color:var(--gold); font-size:1.3rem;">KC</span>
-    </div>
-  </div>
-  <ul class="nav-links">
-    <li><a href="#welcome">Welcome</a></li>
-    <li><a href="#collection">Collection</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
-<div class="mobile-menu" id="mobileMenu">
-  <a href="#welcome" onclick="closeMenu()">Welcome</a>
-  <a href="#collection" onclick="closeMenu()">Collection</a>
-  <a href="#contact" onclick="closeMenu()">Contact</a>
-</div>
- 
-<!-- HERO / WELCOME -->
-<section id="welcome">
-  <div class="hero-bg"></div>
-  <div class="hero-ring"></div>
-  <div class="hero-ring"></div>
-  <div class="hero-ring"></div>
- 
-  <div class="hero-inner">
-    <div class="hero-left">
-      <img src="imgs/logo.jpg" alt="KC Nail Art Logo" class="hero-logo-img" style="width:120px;height:120px;border-radius:6px;">
-      <div>
-        <p class="hero-subtitle">Welcome to</p>
-        <h1 class="hero-title">KC Nail Art</h1>
-      </div>
-      <div class="hero-pill">
-        "Precision, artistry, and care — crafted for clients who expect nothing less than flawless."
-      </div>
-      <a href="#collection" class="hero-cta">View Services</a>
-    </div>
-    <div class="hero-right">
-      <div class="hero-about-card">
-        <h3>Meet Kristina</h3>
-        <p>
-          Hi, I'm Kristina — a passionate nail artist dedicated to creating beautiful, long-lasting nail art that's tailored to you. Every set is approached with precision and intention, ensuring you leave feeling confident and polished. Whether you're looking for a minimal, clean finish or intricate nail art, I bring the same level of care to every client.
-        </p>
+  <nav>
+    <div class="nav-logo">
+      <img src="imgs/logo.jpg" alt="KC Nail Art"
+        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+      <div style="display:none; width:58px; height:58px; background:var(--charcoal); border-radius:4px; align-items:center; justify-content:center;">
+        <span style="font-family:'Pinyon Script',cursive; color:var(--gold); font-size:1.3rem;">KC</span>
       </div>
     </div>
+    <ul class="nav-links">
+      <li><a href="#welcome">Welcome</a></li>
+      <li><a href="#collection">Collection</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#welcome" onclick="closeMenu()">Welcome</a>
+    <a href="#collection" onclick="closeMenu()">Collection</a>
+    <a href="#contact" onclick="closeMenu()">Contact</a>
   </div>
-</section>
- 
-<div class="divider">✦ &nbsp;&nbsp;&nbsp; ✦ &nbsp;&nbsp;&nbsp; ✦</div>
- 
-<!-- COLLECTION -->
-<section id="collection">
-  <div class="section-header reveal">
-    <h2>Polished Perfection</h2>
-    <p>Curated Services</p>
-  </div>
- 
-  <div class="services-grid">
-    <div class="row justify-content-center">
-      <!-- Row 1: 3 cards -->
-      <div class="col-12 col-sm-6 col-md-4">
-        <div class="wrapper reveal">
-          <div class="product-img">
-            <img src="imgs/Structured.jpg" height="420" width="327">
-          </div>
-          <div class="product-info">
-            <div class="product-text">
-              <h1>Structured Gel Manicure</h1>
-              <h2>Short / Medium / Long</h2>
-              <p>A precision e-file manicure and sculpted hard gel overlay designed for maximum strength and a flawless, slim silhouette.</p>
-            </div>
-            <div class="product-price-btn">
-              <p><span>100</span>$</p>
-              <a href="#contact" class="btn-book" style="text-decoration: none;">book now</a>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="col-12 col-sm-6 col-md-4">
-        <div class="wrapper reveal">
-          <div class="product-img">
-            <img src="imgs/Hard.jpg" height="420" width="327">
-          </div>
-          <div class="product-info">
-            <div class="product-text">
-              <h1>Hard Gel Extensions</h1>
-              <h2>Short / Long</h2>
-              <p>Expertly sculpted for elegant length and a balanced structure, these lightweight extensions offer a flawlessly refined silhouette with long-lasting durability.</p>
-            </div>
-            <div class="product-price-btn">
-              <p><span>130</span>$</p>
-              <a href="#contact" class="btn-book" style="text-decoration: none;">book now</a>
-            </div>
-          </div>
-        </div>
-      </div>
+  <!-- HERO / WELCOME -->
+  <section id="welcome">
+    <div class="hero-bg"></div>
+    <div class="hero-ring"></div>
+    <div class="hero-ring"></div>
+    <div class="hero-ring"></div>
 
-      <div class="col-12 col-sm-6 col-md-4">
-        <div class="wrapper reveal">
-          <div class="product-img">
-            <img src="imgs/Efile.png" height="420" width="327">
-          </div>
-          <div class="product-info">
-            <div class="product-text">
-              <h1>E File Manicure</h1>
-              <h2>No Polish</h2>
-              <p>A precise e-file dry manicure that meticulously refines cuticles and smooths the natural nail for a healthy, flawlessly groomed finish.</p>
-            </div>
-            <div class="product-price-btn">
-              <p><span>50</span>$</p>
-              <a href="#contact" class="btn-book" style="text-decoration: none;">book now</a>
-            </div>
-          </div>
+    <div class="hero-inner">
+      <div class="hero-left">
+        <img src="imgs/logo.jpg" alt="KC Nail Art Logo" class="hero-logo-img">
+        <div>
+          <p class="hero-subtitle">Welcome to</p>
+          <h1 class="hero-title">KC Nail Art</h1>
         </div>
-      </div>
-
-      <!-- Row 2: 2 centered cards -->
-      <div class="col-12 col-sm-6 col-md-4">
-        <div class="wrapper reveal">
-          <div class="product-img">
-            <img src="imgs/Fix.png" height="200" width="300">
-          </div>
-          <div class="product-info">
-            <div class="product-text">
-              <h1>Fix A Nail</h1>
-              <h2>Extension Nails</h2>
-              <p>A targeted touch-up to repair chips, cracks, or breaks, restoring strength and shape to blend seamlessly with your current set.</p>
-            </div>
-            <div class="product-price-btn">
-              <p><span>15</span>$</p>
-              <a href="#contact" class="btn-book" style="text-decoration: none;">book now</a>
-            </div>
-          </div>
+        <div class="hero-pill">
+          "Precision, artistry, and care — crafted for clients who expect nothing less than flawless."
         </div>
+        <a href="#collection" class="hero-cta">View Services</a>
       </div>
-
-      <div class="col-12 col-sm-6 col-md-4">
-        <div class="wrapper reveal">
-          <div class="product-img">
-            <img src="imgs/Gel.jpg" height="420" width="327">
-          </div>
-          <div class="product-info">
-            <div class="product-text">
-              <h1>Gel Manicure</h1>
-              <h2>Soft Gel</h2>
-              <p>A precision e-file manicure and structured soft gel overlay designed to reinforce natural nails with a lightweight, elegantly shaped finish.</p>
-            </div>
-            <div class="product-price-btn">
-              <p><span>90</span>$</p>
-              <a href="#contact" class="btn-book" style="text-decoration: none;">book now</a>
-            </div>
-          </div>
+      <div class="hero-right">
+        <div class="hero-about-card">
+          <h3>Meet Kristina</h3>
+          <p>
+            Hi, I'm Kristina — a passionate nail artist dedicated to creating beautiful, long-lasting nail art that's tailored to you. Every set is approached with precision and intention, ensuring you leave feeling confident and polished. Whether you're looking for a minimal, clean finish or intricate nail art, I bring the same level of care to every client.
+          </p>
         </div>
       </div>
     </div>
-  </div>
-</section>
- 
-<div class="divider">✦ &nbsp;&nbsp;&nbsp; ✦ &nbsp;&nbsp;&nbsp; ✦</div>
- 
-<!-- CONTACT -->
-<section id="contact">
-  <div class="contact-inner">
+  </section>
+
+  <div class="divider">✦ &nbsp;&nbsp;&nbsp; ✦ &nbsp;&nbsp;&nbsp; ✦</div>
+
+  <!-- COLLECTION -->
+  <section id="collection">
     <div class="section-header reveal">
-      <h2>Book Your Set</h2>
-      <p>Get in touch</p>
+      <h2>Polished Perfection</h2>
+      <p>Curated Services</p>
     </div>
 
-    <div class="contact-grid">
-      <div class="contact-links reveal">
-
-        <a href="https://instagram.com/kc.nail_art" target="_blank" class="contact-link">
-          <div class="contact-icon icon-insta">
-            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+    <div class="services-grid">
+      <div class="row justify-content-center g-3">
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="wrapper reveal">
+            <div class="product-img">
+              <img src="imgs/Structured.jpg" alt="Structured Gel Manicure">
+            </div>
+            <div class="product-info">
+              <div class="product-text">
+                <h1>Structured Gel Manicure</h1>
+                <h2>Short / Medium / Long</h2>
+                <p>A precision e-file manicure and sculpted hard gel overlay designed for maximum strength and a flawless, slim silhouette.</p>
+              </div>
+              <div class="product-price-btn">
+                <p><span>100</span>$</p>
+                <a href="#contact" class="btn-book" style="text-decoration:none;">book now</a>
+              </div>
+            </div>
           </div>
-          <div class="contact-label">
-            <span>Instagram</span>
-            <span>kc.nail_art</span>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="wrapper reveal">
+            <div class="product-img">
+              <img src="imgs/Hard.jpg" alt="Hard Gel Extensions">
+            </div>
+            <div class="product-info">
+              <div class="product-text">
+                <h1>Hard Gel Extensions</h1>
+                <h2>Short / Long</h2>
+                <p>Expertly sculpted for elegant length and a balanced structure, these lightweight extensions offer a flawlessly refined silhouette with long-lasting durability.</p>
+              </div>
+              <div class="product-price-btn">
+                <p><span>130</span>$</p>
+                <a href="#contact" class="btn-book" style="text-decoration:none;">book now</a>
+              </div>
+            </div>
           </div>
-        </a>
+        </div>
 
-        <!-- other links stay unchanged -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="wrapper reveal">
+            <div class="product-img">
+              <img src="imgs/Efile.png" alt="E File Manicure">
+            </div>
+            <div class="product-info">
+              <div class="product-text">
+                <h1>E File Manicure</h1>
+                <h2>No Polish</h2>
+                <p>A precise e-file dry manicure that meticulously refines cuticles and smooths the natural nail for a healthy, flawlessly groomed finish.</p>
+              </div>
+              <div class="product-price-btn">
+                <p><span>50</span>$</p>
+                <a href="#contact" class="btn-book" style="text-decoration:none;">book now</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="wrapper reveal">
+            <div class="product-img">
+              <img src="imgs/Fix.png" alt="Fix A Nail">
+            </div>
+            <div class="product-info">
+              <div class="product-text">
+                <h1>Fix A Nail</h1>
+                <h2>Extension Nails</h2>
+                <p>A targeted touch-up to repair chips, cracks, or breaks, restoring strength and shape to blend seamlessly with your current set.</p>
+              </div>
+              <div class="product-price-btn">
+                <p><span>15</span>$</p>
+                <a href="#contact" class="btn-book" style="text-decoration:none;">book now</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <div class="hours-card reveal">
-        <h4>Hours</h4>
-        <ul class="hours-list">
-          <li><span class="day">Sunday</span><span>9AM – 5PM</span></li>
-          <li><span class="day">Monday</span><span>9AM – 6PM</span></li>
-          <li><span class="day">Tuesday</span><span>9AM – 6PM</span></li>
-          <li><span class="day">Wednesday</span><span>9AM – 4PM</span></li>
-          <li><span class="day">Thursday</span><span>9AM – 6PM</span></li>
-          <li><span class="day">Friday</span><span>9AM – 6PM</span></li>
-          <li><span class="day">Saturday</span><span>9AM – 5PM</span></li>
-        </ul>
-      </div>
-
-      <!-- ✅ ADDED MAP (nothing else changed) -->
-      <div class="google-iframe-area reveal">
-        <h4>Location</h4>
-        <div class="iframe-container">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14428.68002884821!2d-74.308845!3d40.343428!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3d221cad32101%3A0x90c1cec1eb806eb9!2s203%20US-9%2C%20Morganville%2C%20NJ%2007751!5e1!3m2!1sen!2sus!4v1776106520928!5m2!1sen!2sus"
-            width="400"
-            height="300"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="wrapper reveal">
+            <div class="product-img">
+              <img src="imgs/Gel.jpg" alt="Gel Manicure">
+            </div>
+            <div class="product-info">
+              <div class="product-text">
+                <h1>Gel Manicure</h1>
+                <h2>Soft Gel</h2>
+                <p>A precision e-file manicure and structured soft gel overlay designed to reinforce natural nails with a lightweight, elegantly shaped finish.</p>
+              </div>
+              <div class="product-price-btn">
+                <p><span>90</span>$</p>
+                <a href="#contact" class="btn-book" style="text-decoration:none;">book now</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
     </div>
-  </div>
-</section>
+  </section>
+
+  <div class="divider">✦ &nbsp;&nbsp;&nbsp; ✦ &nbsp;&nbsp;&nbsp; ✦</div>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-inner">
+      <div class="section-header reveal">
+        <h2>Book Your Set</h2>
+        <p>Get in touch</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Top row: 3 equal cards -->
+        <div class="contact-top">
+
+          <!-- Links -->
+          <div class="info-card reveal">
+            <h4>Connect</h4>
+            <div class="contact-links">
+              <a href="https://instagram.com/kc.nail_art" target="_blank" class="contact-link">
+                <div class="contact-icon icon-insta">
+                  <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </div>
+                <div class="contact-label">
+                  <span>Instagram</span>
+                  <span>kc.nail_art</span>
+                </div>
+              </a>
+
+              <a href="mailto:kcnailart.help@gmail.com" class="contact-link">
+                <div class="contact-icon icon-email">
+                  <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                </div>
+                <div class="contact-label">
+                  <span>Email</span>
+                  <span>kcnailart.help@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="https://book.heygoldie.com/d67d0c57238a" target="_blank" class="contact-link">
+                <div class="contact-icon icon-book">
+                  <svg viewBox="0 0 24 24"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg>
+                </div>
+                <div class="contact-label">
+                  <span>Book Online</span>
+                  <span>Schedule via HeyGoldie</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hours -->
+          <div class="info-card reveal">
+            <h4>Hours</h4>
+            <ul class="hours-list">
+              <li><span class="day">Sunday</span><span>9AM – 5PM</span></li>
+              <li><span class="day">Monday</span><span>9AM – 6PM</span></li>
+              <li><span class="day">Tuesday</span><span>9AM – 6PM</span></li>
+              <li><span class="day">Wednesday</span><span>9AM – 4PM</span></li>
+              <li><span class="day">Thursday</span><span>9AM – 6PM</span></li>
+              <li><span class="day">Friday</span><span>9AM – 6PM</span></li>
+              <li><span class="day">Saturday</span><span>9AM – 5PM</span></li>
+            </ul>
+          </div>
+
+          <!-- Location -->
+          <div class="info-card reveal">
+            <h4>Location</h4>
+            <div class="iframe-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14428.68002884821!2d-74.308845!3d40.343428!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3d221cad32101%3A0x90c1cec1eb806eb9!2s203%20US-9%2C%20Morganville%2C%20NJ%2007751!5e1!3m2!1sen!2sus!4v1776106520928!5m2!1sen!2sus"
+                width="100%"
+                height="260"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Full-width booking widget -->
+        <div class="booking-card reveal">
+          <h4>Book a Session</h4>
+          <div class="booking-iframe-container">
+            <iframe
+              src="https://book.heygoldie.com/d67d0c57238a"
+              width="100%"
+              height="650"
+              style="border:0;"
+              loading="lazy"
+              title="Book with KC Nail Art on HeyGoldie">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 <span>KC Nail Art</span> — All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+    function closeMenu() {
+      document.getElementById('mobileMenu').classList.remove('open');
+    }
+
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
