@@ -198,8 +198,8 @@ nav {
 }
 
 .hero-logo-img {
-  width: 281px;
-  height: 281px;
+  width: 225px;
+  height: 225px;
   object-fit: cover;
   border-radius: 6px;
   opacity: 0;
@@ -213,7 +213,7 @@ nav {
   transform: none;
   font-family: 'Jost', sans-serif;
   font-weight: 200;
-  font-size: 2.34rem;
+  font-size: 2.8rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   color: var(--gold);
@@ -246,31 +246,14 @@ nav {
   animation: fade-left 1s ease forwards 0.9s;
 }
 
-.hero-about-card {
-  background: rgba(26,26,26,0.95);
-  border-radius: 20px;
-  padding: 3rem;
-  margin-top: 2rem;
-  box-shadow: 0 0 40px rgba(184,154,90,0.35);
-  border: 1px solid rgba(184,154,90,0.9);
-  max-width: 600px;
-  width: 100%;
-  opacity: 0;
-  animation: fade-up 1s ease forwards 0.8s;
-}
-
-.hero-about-card h3 {
-  font-family: 'Pinyon Script', cursive;
-  font-size: 2rem;
-  color: var(--charcoal);
-  margin-bottom: 0.75rem;
-}
-
-.hero-about-card p {
-  font-size: 1rem;
+.hero-description {
+  font-size: 1.2rem;
   font-weight: 300;
   line-height: 1.8;
   color: var(--cream);
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .hero-cta {
@@ -362,7 +345,7 @@ nav {
 
 /* Service cards */
 .wrapper {
-  height: 420px;
+  height: 320px;
   width: 100%;
   border-radius: 7px;
   box-shadow: 0px 14px 32px 0px rgba(0,0,0,0.15);
@@ -401,7 +384,7 @@ nav {
 
 .product-text {
   flex: 1;
-  padding: 1.5rem;
+  padding: 1rem;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -409,7 +392,7 @@ nav {
 }
 
 .product-text h1 {
-  font-size: 18px;
+  font-size: 16px;
   color: #474747;
   font-family: 'Jost', sans-serif;
   line-height: 1.3;
@@ -430,7 +413,7 @@ nav {
   font-family: 'Jost', sans-serif;
   color: #8d8d8d;
   line-height: 1.4em;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: lighter;
 }
 
@@ -712,10 +695,6 @@ footer span { color: var(--gold); }
   .hero-inner {
     padding: 2rem 0;
     width: 92%;
-  }
-
-  .hero-about-card {
-    max-width: 100%;
   }
 
   /* Service cards — stack vertically */
