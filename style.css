@@ -76,7 +76,10 @@ nav {
   transition: width 0.3s;
 }
 
-.nav-links a:hover { color: var(--gold); }
+.nav-links a:hover { 
+  color: #9b7a3d; 
+  text-shadow: 0 0 10px rgba(184,154,90,0.8);
+}
 .nav-links a:hover::after { width: 100%; }
 
 .hamburger {
@@ -186,35 +189,38 @@ nav {
   text-align: center;
 }
 
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
 .hero-logo-img {
-  width: 180px;
-  height: 180px;
+  width: 281px;
+  height: 281px;
   object-fit: cover;
   border-radius: 6px;
   opacity: 0;
   animation: fade-up 1s ease forwards 0.2s;
-}
-
-.hero-title {
-  font-family: 'Pinyon Script', cursive;
-  font-size: clamp(4.5rem, 9vw, 8rem);
-  line-height: 1.05;
-  color: var(--gold);
-  text-shadow: 2px 2px 4px black;
-  opacity: 0;
-  animation: fade-up 1s ease forwards 0.5s;
+  box-shadow: 0 0 30px var(--gold), 0 0 60px rgba(184, 154, 90, 0.5);
+  filter: brightness(1.1);
 }
 
 .hero-subtitle {
+  position: static;
+  transform: none;
   font-family: 'Jost', sans-serif;
   font-weight: 200;
-  font-size: 1.5rem;
+  font-size: 2.34rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   color: var(--gold);
   text-shadow: 2px 2px 4px black;
   opacity: 0;
-  animation: fade-up 1s ease forwards 0.8s;
+  animation: fade-up 1s ease forwards 0.5s;
+  z-index: 1;
 }
 
 .hero-pill {
@@ -241,15 +247,16 @@ nav {
 }
 
 .hero-about-card {
-  background: white;
+  background: rgba(26,26,26,0.95);
   border-radius: 20px;
-  padding: 2.5rem;
-  box-shadow: 0 8px 40px rgba(0,0,0,0.07);
-  border-left: 3px solid var(--gold);
+  padding: 3rem;
+  margin-top: 2rem;
+  box-shadow: 0 0 40px rgba(184,154,90,0.35);
+  border: 1px solid rgba(184,154,90,0.9);
   max-width: 600px;
   width: 100%;
   opacity: 0;
-  animation: fade-up 1s ease forwards 1.1s;
+  animation: fade-up 1s ease forwards 0.8s;
 }
 
 .hero-about-card h3 {
@@ -260,16 +267,16 @@ nav {
 }
 
 .hero-about-card p {
-  font-size: 0.88rem;
+  font-size: 1rem;
   font-weight: 300;
   line-height: 1.8;
-  color: #666;
+  color: var(--cream);
 }
 
 .hero-cta {
   display: inline-block;
   padding: 0.85rem 2.5rem;
-  background: var(--charcoal);
+  background: rgba(26,26,26,0.95);
   color: var(--cream);
   font-family: 'Jost', sans-serif;
   font-size: 0.78rem;
@@ -277,9 +284,17 @@ nav {
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 60px;
-  transition: background 0.3s, transform 0.2s;
+  border: 1px solid var(--gold);
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
   opacity: 0;
-  animation: fade-up 1s ease forwards 1.4s;
+  animation: fade-up 1s ease forwards 1.1s;
+}
+
+.hero-cta:hover {
+  background: var(--gold);
+  color: var(--charcoal);
+  box-shadow: 0 0 20px rgba(184,154,90,0.7);
+  transform: translateY(-2px);
 }
 
 .hero-cta:hover {
